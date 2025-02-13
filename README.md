@@ -70,6 +70,6 @@ Saya aktif dalam berbagai kegiatan akademik dan terus belajar untuk meningkatkan
   <!-- Profile Views -->
   <img alt="Profile Views Counter" src="https://komarev.com/ghpvc/?username=rakasatriaefendi&color=blue">
 </p>  
-💬 *Jika kamu punya saran atau pertanyaan, jangan ragu untuk menghubungiku!*  
+💬 <em>Jika kamu punya saran atau pertanyaan, jangan ragu untuk menghubungiku!</em>
 
 ---
