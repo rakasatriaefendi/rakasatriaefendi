@@ -1,0 +1,43 @@
+name: Update Repositories Section
+
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Fetch & Filter AI/ML Repos
+        run: |
+          curl -s https://api.github.com/users/rakasatriaefendi/repos?sort=updated > repos.json
+          
+          echo "" > aiml.md
+          
+          cat repos.json | jq -r '
+          sort_by(.updated_at) | reverse |
+          map(select(
+            (.name | ascii_downcase | test("ai|ml|machine|learning|cnn|deep|neural|resnet|xception")) or
+            (.description != null and (.description | ascii_downcase | test("ai|ml|machine|learning|cnn|deep|neural|resnet|xception")))
+          ))[:5]
+          | .[]
+          | "<a href=\"\(.html_url)\"><img height=\"120\" src=\"https://github-readme-stats.vercel.app/api/pin/?username=rakasatriaefendi&repo=\(.name)&theme=tokyonight&border_radius=15\"></a>"
+          ' >> aiml.md
+
+      - name: Update README
+        run: |
+          awk '
+          /<!--START_SECTION:aiml-->/ {print; system("cat aiml.md"); skip=1; next}
+          /<!--END_SECTION:aiml-->/ {skip=0}
+          !skip
+          ' README.md > README_new.md && mv README_new.md README.md
+
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: "README.md"
+          message: "Auto update AI/ML repos"
