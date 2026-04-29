@@ -16,7 +16,6 @@ Saya aktif dalam berbagai kegiatan akademik dan terus belajar untuk meningkatkan
 
 ## 📊 GitHub Stats  
 <div align="center">
-  <!-- GitHub Stats -->
   <img alt="GitHub Stats Raka Satria Efendi" src="https://github-readme-stats.vercel.app/api?username=rakasatriaefendi&show_icons=true&theme=tokyonight" width="48%">
   <img alt="Most Used Languages by Raka Satria Efendi" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rakasatriaefendi&layout=compact&theme=tokyonight" width="36%">
 </div>  
@@ -26,16 +25,12 @@ Saya aktif dalam berbagai kegiatan akademik dan terus belajar untuk meningkatkan
 
 ## 📌 Connect with Me  
 <p align="center">
-  <!-- Instagram -->
   <a href="https://www.instagram.com/raka.fx/" target="_blank">
     <img alt="Instagram Logo" src="https://skillicons.dev/icons?i=instagram" width="40">
   </a>
   <br>
   <strong>@raka.fx</strong>
-  <br>
-  &nbsp;
-  <br>
-  <!-- LinkedIn -->
+  <br><br>
   <a href="https://www.linkedin.com/in/raka-satria-efendi" target="_blank">
     <img alt="LinkedIn Logo" src="https://skillicons.dev/icons?i=linkedin" width="40">
   </a>
@@ -49,15 +44,10 @@ Saya aktif dalam berbagai kegiatan akademik dan terus belajar untuk meningkatkan
 
 ## 🚀 Skills & Tools  
 <p align="center">
-  <!-- Python -->
   <img alt="Python Logo" src="https://skillicons.dev/icons?i=python" width="50">
-  <!-- JavaScript -->
   <img alt="JavaScript Logo" src="https://skillicons.dev/icons?i=javascript" width="50">
-  <!-- HTML -->
   <img alt="HTML Logo" src="https://skillicons.dev/icons?i=html" width="50">
-  <!-- CSS -->
   <img alt="CSS Logo" src="https://skillicons.dev/icons?i=css" width="50">
-  <!-- Git -->
   <img alt="Git Logo" src="https://skillicons.dev/icons?i=git" width="50">
 </p>  
 
@@ -67,26 +57,42 @@ Saya aktif dalam berbagai kegiatan akademik dan terus belajar untuk meningkatkan
 
 ## 📈 Profile Views  
 <p align="center">
-  <!-- Profile Views -->
   <img alt="Profile Views Counter" src="https://komarev.com/ghpvc/?username=rakasatriaefendi&color=blue">
 </p>  
 💬 <em>Jika kamu punya saran atau pertanyaan, jangan ragu untuk menghubungiku!</em>
 
 ---
+
 <h2 align="center">📂 My GitHub Repositories 📂</h2>
 <br>
+
 <div width="100%" align="center">
-  <a href="https://github.com/rakasatriaefendi/Proyek-Analisis-Data-Air-Quality-in-Beijing" title="Proyek Analisis Data Air Quality in Beijing">
+  <a href="https://github.com/rakasatriaefendi/Proyek-Analisis-Data-Air-Quality-in-Beijing">
     <img align="left" height="130" src="https://github-readme-stats.vercel.app/api/pin/?username=rakasatriaefendi&repo=Proyek-Analisis-Data-Air-Quality-in-Beijing&theme=tokyonight&border_color=blueviolet&border_radius=20" style="margin-right: 40px;">
   </a>
-  <a href="https://github.com/rakasatriaefendi/Analisis-Data-Spotify" title="Analisis Data Spotify">
+  <a href="https://github.com/rakasatriaefendi/Analisis-Data-Spotify">
     <img align="right" height="130" src="https://github-readme-stats.vercel.app/api/pin/?username=rakasatriaefendi&repo=Analisis-Data-Spotify&theme=tokyonight&border_color=blueviolet&border_radius=20">
   </a>
 </div>
+
 <br/><br/><br/><br/><br/><br/>
 
+---
+
+## 🤖 AI / ML Projects (Auto Update)
+<div align="center">
+
+<!--START_SECTION:aiml-->
+<!--END_SECTION:aiml-->
+
+</div>
+
+<em>Menampilkan repository AI / Machine Learning terbaru secara otomatis.</em>
+
+---
+
 <h4 align="center">
-  <a href="https://github.com/rakasatriaefendi?tab=repositories" title="Show More Repositories">🔎 Show More 🔍</a>
+  <a href="https://github.com/rakasatriaefendi?tab=repositories">🔎 Show More 🔍</a>
 </h4>
 
 ---
