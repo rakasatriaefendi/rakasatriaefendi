@@ -1,10 +1,9 @@
 name: Update Repositories Section
 on:
   schedule:
-    - cron: "0 9 * * 1"
+    - cron: "0 9 * * 1"  # Setiap Senin jam 09.00 UTC (16.00 WIB)
   workflow_dispatch:
 
-# Tambahkan permission ini
 permissions:
   contents: write
 
@@ -13,37 +12,73 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v4  # upgrade dari v3 ke v4
+        uses: actions/checkout@v4
 
-      - name: Fetch & Filter AI/ML Repos
+      - name: Fetch GitHub Repos Data
         run: |
           curl -s "https://api.github.com/users/rakasatriaefendi/repos?sort=updated&per_page=100" > repos.json
 
+      - name: Filter & Generate AI/ML Repos
+        run: |
           cat repos.json | jq -r '
           sort_by(.updated_at) | reverse |
           map(select(
             (.name | ascii_downcase | test("ai|ml|machine|learning|cnn|deep|neural|resnet|xception")) or
             (.description != null and (.description | ascii_downcase | test("ai|ml|machine|learning|cnn|deep|neural|resnet|xception")))
-          ))[:5]
+          ))[:4]
           | .[]
-          | "<a href=\"\(.html_url)\"><img height=\"120\" src=\"https://github-readme-stats.vercel.app/api/pin/?username=rakasatriaefendi&repo=\(.name)&theme=tokyonight&border_radius=15\"></a>"
+          | "<a href=\"\(.html_url)\"><img height=\"120\" src=\"https://github-readme-stats.vercel.app/api/pin/?username=rakasatriaefendi&repo=\(.name | @uri)&theme=tokyonight&border_radius=15\"></a>"
           ' > aiml.md
 
-          echo "=== Isi aiml.md ==="
-          cat aiml.md
-
-      - name: Update README
+      - name: Filter & Generate Web Dev Repos
         run: |
-          awk '
-          /<!--START_SECTION:aiml-->/ {print; system("cat aiml.md"); skip=1; next}
-          /<!--END_SECTION:aiml-->/ {skip=0}
-          !skip
-          ' README.md > README_new.md && mv README_new.md README.md
+          cat repos.json | jq -r '
+          sort_by(.updated_at) | reverse |
+          map(select(
+            ((.name | ascii_downcase | test("ai|ml|machine|learning|cnn|deep|neural|resnet|xception") | not) and
+             (.description == null or (.description | ascii_downcase | test("ai|ml|machine|learning|cnn|deep|neural|resnet|xception") | not)))
+            and
+            ((.name | ascii_downcase | test("web|html|css|js|javascript|node|hapi|express|flask|api|supabase|pwa")) or
+             (.description != null and (.description | ascii_downcase | test("web|html|css|js|javascript|node|hapi|express|flask|api|supabase|pwa"))) or
+             (.language != null and (.language | ascii_downcase | test("html|css|javascript|typescript"))))
+          ))[:4]
+          | .[]
+          | "<a href=\"\(.html_url)\"><img height=\"120\" src=\"https://github-readme-stats.vercel.app/api/pin/?username=rakasatriaefendi&repo=\(.name | @uri)&theme=tokyonight&border_radius=15\"></a>"
+          ' > web.md
+
+      - name: Filter & Generate Other Repos
+        run: |
+          cat repos.json | jq -r '
+          sort_by(.updated_at) | reverse |
+          map(select(
+            (.name | ascii_downcase == "rakasatriaefendi" | not)
+            and
+            ((.name | ascii_downcase | test("ai|ml|machine|learning|cnn|deep|neural|resnet|xception") | not) and
+             (.description == null or (.description | ascii_downcase | test("ai|ml|machine|learning|cnn|deep|neural|resnet|xception") | not)))
+            and
+            ((.name | ascii_downcase | test("web|html|css|js|javascript|node|hapi|express|flask|api|supabase|pwa") | not) and
+             (.description == null or (.description | ascii_downcase | test("web|html|css|js|javascript|node|hapi|express|flask|api|supabase|pwa") | not)) and
+             (.language == null or (.language | ascii_downcase | test("html|css|javascript|typescript") | not)))
+          ))[:4]
+          | .[]
+          | "<a href=\"\(.html_url)\"><img height=\"120\" src=\"https://github-readme-stats.vercel.app/api/pin/?username=rakasatriaefendi&repo=\(.name | @uri)&theme=tokyonight&border_radius=15\"></a>"
+          ' > others.md
+
+      - name: Inject Content into README
+        run: |
+          # Inject AI/ML
+          awk '/<!--START_SECTION:aiml-->/ {print; system("cat aiml.md"); skip=1; next} /<!--END_SECTION:aiml-->/ {skip=0} !skip' README.md > temp.md && mv temp.md README.md
+
+          # Inject Web Dev
+          awk '/<!--START_SECTION:web-->/ {print; system("cat web.md"); skip=1; next} /<!--END_SECTION:web-->/ {skip=0} !skip' README.md > temp.md && mv temp.md README.md
+
+          # Inject Others
+          awk '/<!--START_SECTION:others-->/ {print; system("cat others.md"); skip=1; next} /<!--END_SECTION:others-->/ {skip=0} !skip' README.md > temp.md && mv temp.md README.md
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
         with:
           add: "README.md"
-          message: "Auto update AI/ML repos"
+          message: "Auto update multi-category portfolios"
           default_author: github_actions
-          github_token: ${{ secrets.GITHUB_TOKEN }}  # Tambahkan ini
+          github_token: ${{ secrets.GITHUB_TOKEN }}
