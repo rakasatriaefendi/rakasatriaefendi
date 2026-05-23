@@ -1,23 +1,24 @@
 name: Update Repositories Section
-
 on:
   schedule:
-    - cron: "0 * * * *"
+    - cron: "0 9 * * 1"
   workflow_dispatch:
+
+# Tambahkan permission ini
+permissions:
+  contents: write
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4  # upgrade dari v3 ke v4
 
       - name: Fetch & Filter AI/ML Repos
         run: |
-          curl -s https://api.github.com/users/rakasatriaefendi/repos?sort=updated > repos.json
-          
-          echo "" > aiml.md
-          
+          curl -s "https://api.github.com/users/rakasatriaefendi/repos?sort=updated&per_page=100" > repos.json
+
           cat repos.json | jq -r '
           sort_by(.updated_at) | reverse |
           map(select(
@@ -26,7 +27,10 @@ jobs:
           ))[:5]
           | .[]
           | "<a href=\"\(.html_url)\"><img height=\"120\" src=\"https://github-readme-stats.vercel.app/api/pin/?username=rakasatriaefendi&repo=\(.name)&theme=tokyonight&border_radius=15\"></a>"
-          ' >> aiml.md
+          ' > aiml.md
+
+          echo "=== Isi aiml.md ==="
+          cat aiml.md
 
       - name: Update README
         run: |
@@ -41,3 +45,5 @@ jobs:
         with:
           add: "README.md"
           message: "Auto update AI/ML repos"
+          default_author: github_actions
+          github_token: ${{ secrets.GITHUB_TOKEN }}  # Tambahkan ini
