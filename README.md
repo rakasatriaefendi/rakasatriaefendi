@@ -81,23 +81,31 @@ Saya aktif dalam berbagai kegiatan akademik dan terus belajar untuk meningkatkan
 
 ## 🤖 AI / ML Projects (Auto Update)
 <div align="center">
-
 <!--START_SECTION:aiml-->
-<a href="https://github.com/rakasatriaefendi/DERMIFY-Skripsi"><img height="120" src="https://github-readme-stats.vercel.app/api/pin/?username=rakasatriaefendi&repo=DERMIFY-Skripsi&theme=tokyonight&border_radius=15"></a>
-<a href="https://github.com/rakasatriaefendi/Belajar-Machine-Learning-Pemula"><img height="120" src="https://github-readme-stats.vercel.app/api/pin/?username=rakasatriaefendi&repo=Belajar-Machine-Learning-Pemula&theme=tokyonight&border_radius=15"></a>
-<a href="https://github.com/rakasatriaefendi/figma"><img height="120" src="https://github-readme-stats.vercel.app/api/pin/?username=rakasatriaefendi&repo=figma&theme=tokyonight&border_radius=15"></a>
-<a href="https://github.com/rakasatriaefendi/Belajar-Fundamental-Deep-Learning"><img height="120" src="https://github-readme-stats.vercel.app/api/pin/?username=rakasatriaefendi&repo=Belajar-Fundamental-Deep-Learning&theme=tokyonight&border_radius=15"></a>
-<a href="https://github.com/rakasatriaefendi/skin-cancer-xception-space"><img height="120" src="https://github-readme-stats.vercel.app/api/pin/?username=rakasatriaefendi&repo=skin-cancer-xception-space&theme=tokyonight&border_radius=15"></a>
 <!--END_SECTION:aiml-->
-
 </div>
+💬 _Menampilkan repository AI / Machine Learning terbaru secara otomatis._
 
-<em>Menampilkan repository AI / Machine Learning terbaru secara otomatis.</em>
+---
+
+## 🌐 Web Development Projects (Auto Update)
+<div align="center">
+<!--START_SECTION:web-->
+<!--END_SECTION:web-->
+</div>
+💬 _Menampilkan repository Web Development terbaru secara otomatis._
+
+---
+
+## 📁 Other Projects (Auto Update)
+<div align="center">
+<!--START_SECTION:others-->
+<!--END_SECTION:others-->
+</div>
+💬 _Menampilkan repository lainnya secara otomatis._
 
 ---
 
 <h4 align="center">
   <a href="https://github.com/rakasatriaefendi?tab=repositories">🔎 Show More 🔍</a>
 </h4>
-
----
