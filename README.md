@@ -25,7 +25,7 @@ Currently, I focus on Deep Learning, Computer Vision, and integrating machine le
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=rakasatriaefendi&theme=tokyo-night" alt="Activity Graph">
   <br><br>
   <!--START_SECTION:statsbadge-->
-![Public Repos](https://img.shields.io/badge/Public%20Repos-36-blueviolet?style=flat-square) ![Total Stars](https://img.shields.io/badge/Total%20Stars-1-yellow?style=flat-square)
+<img src="https://img.shields.io/badge/Public%20Repos-36-blueviolet?style=flat-square" alt="Public Repos"> <img src="https://img.shields.io/badge/Total%20Stars-1-yellow?style=flat-square" alt="Total Stars">
   <!--END_SECTION:statsbadge-->
   <br>
   <img src="https://img.shields.io/github/followers/rakasatriaefendi?label=Followers&style=social" alt="Followers">
