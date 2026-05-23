@@ -23,11 +23,14 @@ jobs:
           cat repos.json | jq -r '
           sort_by(.updated_at) | reverse |
           map(select(
-            (.name | ascii_downcase | test("ai|ml|machine|learning|cnn|deep|neural|resnet|xception")) or
-            (.description != null and (.description | ascii_downcase | test("ai|ml|machine|learning|cnn|deep|neural|resnet|xception")))
+            (.fork == false) and  # ← tambah ini, skip repo fork
+            (
+              (.name | ascii_downcase | test("ai|ml|machine|learning|cnn|deep|neural|resnet|xception|sentimen|sentiment|cancer|skin|dermify|cinesentia")) or
+              (.description != null and (.description | ascii_downcase | test("ai|ml|machine|learning|cnn|deep|neural|resnet|xception|sentimen|sentiment|cancer|skin")))
+            )
           ))[:4]
           | .[]
-          | "<a href=\"\(.html_url)\"><img height=\"120\" src=\"https://github-readme-stats.vercel.app/api/pin/?username=rakasatriaefendi&repo=\(.name | @uri)&theme=tokyonight&border_radius=15\"></a>"
+          | "<a href=\"\(.html_url)\"><img height=\"120\" src=\"https://github-readme-stats.vercel.app/api/pin/?username=rakasatriaefendi&repo=\(.name)&theme=tokyonight&border_radius=15\"></a>"
           ' > aiml.md
 
       - name: Filter & Generate Web Dev Repos
