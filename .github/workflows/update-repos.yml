@@ -142,7 +142,8 @@ jobs:
           awk '/<!--START_SECTION:others-->/ {print; system("cat others.md"); skip=1; next} /<!--END_SECTION:others-->/ {skip=0} !skip' README.md > temp.md && mv temp.md README.md
 
           # Inject Last Updated
-          echo "![Last Updated](https://img.shields.io/badge/Last%20Updated-$(date +'%d%20%B%20%Y')-gray?style=flat-square)" > updated.md
+          DATE=$(date +'%d-%b-%Y')
+          echo "<img src=\"https://img.shields.io/badge/Last%20Updated-${DATE}-gray?style=flat-square\" alt=\"Last Updated\">" > updated.md
           awk '/<!--START_SECTION:updated-->/ {print; system("cat updated.md"); skip=1; next} /<!--END_SECTION:updated-->/ {skip=0} !skip' README.md > temp.md && mv temp.md README.md
 
       - name: Commit changes
