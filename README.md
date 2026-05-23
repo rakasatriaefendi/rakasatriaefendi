@@ -82,6 +82,10 @@ Saya aktif dalam berbagai kegiatan akademik dan terus belajar untuk meningkatkan
 ## 🤖 AI / ML Projects (Auto Update)
 <div align="center">
 <!--START_SECTION:aiml-->
+<a href="https://github.com/rakasatriaefendi/cinesentia-model"><img src="https://gh-card.dev/repos/rakasatriaefendi/cinesentia-model.svg" alt="cinesentia-model"></a>
+<a href="https://github.com/rakasatriaefendi/DERMIFY-Skripsi"><img src="https://gh-card.dev/repos/rakasatriaefendi/DERMIFY-Skripsi.svg" alt="DERMIFY-Skripsi"></a>
+<a href="https://github.com/rakasatriaefendi/Belajar-Machine-Learning-Pemula"><img src="https://gh-card.dev/repos/rakasatriaefendi/Belajar-Machine-Learning-Pemula.svg" alt="Belajar-Machine-Learning-Pemula"></a>
+<a href="https://github.com/rakasatriaefendi/figma"><img src="https://gh-card.dev/repos/rakasatriaefendi/figma.svg" alt="figma"></a>
 <!--END_SECTION:aiml-->
 </div>
 💬 _Menampilkan repository AI / Machine Learning terbaru secara otomatis._
@@ -91,6 +95,10 @@ Saya aktif dalam berbagai kegiatan akademik dan terus belajar untuk meningkatkan
 ## 🌐 Web Development Projects (Auto Update)
 <div align="center">
 <!--START_SECTION:web-->
+<a href="https://github.com/rakasatriaefendi/RAKA21"><img src="https://gh-card.dev/repos/rakasatriaefendi/RAKA21.svg" alt="RAKA21"></a>
+<a href="https://github.com/rakasatriaefendi/shopinid-ecommerce"><img src="https://gh-card.dev/repos/rakasatriaefendi/shopinid-ecommerce.svg" alt="shopinid-ecommerce"></a>
+<a href="https://github.com/rakasatriaefendi/Belajar-Pengembangan-Web-Intermediate-Submission-Proyek-Kedua"><img src="https://gh-card.dev/repos/rakasatriaefendi/Belajar-Pengembangan-Web-Intermediate-Submission-Proyek-Kedua.svg" alt="Belajar-Pengembangan-Web-Intermediate-Submission-Proyek-Kedua"></a>
+<a href="https://github.com/rakasatriaefendi/storyapp-web-interrmediate"><img src="https://gh-card.dev/repos/rakasatriaefendi/storyapp-web-interrmediate.svg" alt="storyapp-web-interrmediate"></a>
 <!--END_SECTION:web-->
 </div>
 💬 _Menampilkan repository Web Development terbaru secara otomatis._
@@ -100,6 +108,10 @@ Saya aktif dalam berbagai kegiatan akademik dan terus belajar untuk meningkatkan
 ## 📁 Other Projects (Auto Update)
 <div align="center">
 <!--START_SECTION:others-->
+<a href="https://github.com/rakasatriaefendi/cinesentia-model"><img src="https://gh-card.dev/repos/rakasatriaefendi/cinesentia-model.svg" alt="cinesentia-model"></a>
+<a href="https://github.com/rakasatriaefendi/Analisis-Sentimen"><img src="https://gh-card.dev/repos/rakasatriaefendi/Analisis-Sentimen.svg" alt="Analisis-Sentimen"></a>
+<a href="https://github.com/rakasatriaefendi/host-pi"><img src="https://gh-card.dev/repos/rakasatriaefendi/host-pi.svg" alt="host-pi"></a>
+<a href="https://github.com/rakasatriaefendi/pi-skin-cancer-classification"><img src="https://gh-card.dev/repos/rakasatriaefendi/pi-skin-cancer-classification.svg" alt="pi-skin-cancer-classification"></a>
 <!--END_SECTION:others-->
 </div>
 💬 _Menampilkan repository lainnya secara otomatis._
