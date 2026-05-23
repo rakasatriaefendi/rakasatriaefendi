@@ -83,6 +83,11 @@ Saya aktif dalam berbagai kegiatan akademik dan terus belajar untuk meningkatkan
 <div align="center">
 
 <!--START_SECTION:aiml-->
+<a href="https://github.com/rakasatriaefendi/DERMIFY-Skripsi"><img height="120" src="https://github-readme-stats.vercel.app/api/pin/?username=rakasatriaefendi&repo=DERMIFY-Skripsi&theme=tokyonight&border_radius=15"></a>
+<a href="https://github.com/rakasatriaefendi/Belajar-Machine-Learning-Pemula"><img height="120" src="https://github-readme-stats.vercel.app/api/pin/?username=rakasatriaefendi&repo=Belajar-Machine-Learning-Pemula&theme=tokyonight&border_radius=15"></a>
+<a href="https://github.com/rakasatriaefendi/figma"><img height="120" src="https://github-readme-stats.vercel.app/api/pin/?username=rakasatriaefendi&repo=figma&theme=tokyonight&border_radius=15"></a>
+<a href="https://github.com/rakasatriaefendi/Belajar-Fundamental-Deep-Learning"><img height="120" src="https://github-readme-stats.vercel.app/api/pin/?username=rakasatriaefendi&repo=Belajar-Fundamental-Deep-Learning&theme=tokyonight&border_radius=15"></a>
+<a href="https://github.com/rakasatriaefendi/skin-cancer-xception-space"><img height="120" src="https://github-readme-stats.vercel.app/api/pin/?username=rakasatriaefendi&repo=skin-cancer-xception-space&theme=tokyonight&border_radius=15"></a>
 <!--END_SECTION:aiml-->
 
 </div>
