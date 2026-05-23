@@ -82,6 +82,10 @@ Saya aktif dalam berbagai kegiatan akademik dan terus belajar untuk meningkatkan
 ## 🤖 AI / ML Projects (Auto Update)
 <div align="center">
 <!--START_SECTION:aiml-->
+<a href="https://github.com/rakasatriaefendi/DERMIFY-Skripsi"><img height="120" src="https://github-readme-stats.vercel.app/api/pin/?username=rakasatriaefendi&repo=DERMIFY-Skripsi&theme=tokyonight&border_radius=15"></a>
+<a href="https://github.com/rakasatriaefendi/Belajar-Machine-Learning-Pemula"><img height="120" src="https://github-readme-stats.vercel.app/api/pin/?username=rakasatriaefendi&repo=Belajar-Machine-Learning-Pemula&theme=tokyonight&border_radius=15"></a>
+<a href="https://github.com/rakasatriaefendi/figma"><img height="120" src="https://github-readme-stats.vercel.app/api/pin/?username=rakasatriaefendi&repo=figma&theme=tokyonight&border_radius=15"></a>
+<a href="https://github.com/rakasatriaefendi/Belajar-Fundamental-Deep-Learning"><img height="120" src="https://github-readme-stats.vercel.app/api/pin/?username=rakasatriaefendi&repo=Belajar-Fundamental-Deep-Learning&theme=tokyonight&border_radius=15"></a>
 <!--END_SECTION:aiml-->
 </div>
 💬 _Menampilkan repository AI / Machine Learning terbaru secara otomatis._
@@ -91,6 +95,10 @@ Saya aktif dalam berbagai kegiatan akademik dan terus belajar untuk meningkatkan
 ## 🌐 Web Development Projects (Auto Update)
 <div align="center">
 <!--START_SECTION:web-->
+<a href="https://github.com/rakasatriaefendi/RAKA21"><img height="120" src="https://github-readme-stats.vercel.app/api/pin/?username=rakasatriaefendi&repo=RAKA21&theme=tokyonight&border_radius=15"></a>
+<a href="https://github.com/rakasatriaefendi/shopinid-ecommerce"><img height="120" src="https://github-readme-stats.vercel.app/api/pin/?username=rakasatriaefendi&repo=shopinid-ecommerce&theme=tokyonight&border_radius=15"></a>
+<a href="https://github.com/rakasatriaefendi/test-e-commerce-toko-jawa"><img height="120" src="https://github-readme-stats.vercel.app/api/pin/?username=rakasatriaefendi&repo=test-e-commerce-toko-jawa&theme=tokyonight&border_radius=15"></a>
+<a href="https://github.com/rakasatriaefendi/Belajar-Pengembangan-Web-Intermediate-Submission-Proyek-Kedua"><img height="120" src="https://github-readme-stats.vercel.app/api/pin/?username=rakasatriaefendi&repo=Belajar-Pengembangan-Web-Intermediate-Submission-Proyek-Kedua&theme=tokyonight&border_radius=15"></a>
 <!--END_SECTION:web-->
 </div>
 💬 _Menampilkan repository Web Development terbaru secara otomatis._
@@ -100,6 +108,10 @@ Saya aktif dalam berbagai kegiatan akademik dan terus belajar untuk meningkatkan
 ## 📁 Other Projects (Auto Update)
 <div align="center">
 <!--START_SECTION:others-->
+<a href="https://github.com/rakasatriaefendi/cinesentia-model"><img height="120" src="https://github-readme-stats.vercel.app/api/pin/?username=rakasatriaefendi&repo=cinesentia-model&theme=tokyonight&border_radius=15"></a>
+<a href="https://github.com/rakasatriaefendi/Analisis-Sentimen"><img height="120" src="https://github-readme-stats.vercel.app/api/pin/?username=rakasatriaefendi&repo=Analisis-Sentimen&theme=tokyonight&border_radius=15"></a>
+<a href="https://github.com/rakasatriaefendi/host-pi"><img height="120" src="https://github-readme-stats.vercel.app/api/pin/?username=rakasatriaefendi&repo=host-pi&theme=tokyonight&border_radius=15"></a>
+<a href="https://github.com/rakasatriaefendi/pi-skin-cancer-classification"><img height="120" src="https://github-readme-stats.vercel.app/api/pin/?username=rakasatriaefendi&repo=pi-skin-cancer-classification&theme=tokyonight&border_radius=15"></a>
 <!--END_SECTION:others-->
 </div>
 💬 _Menampilkan repository lainnya secara otomatis._
