@@ -8,9 +8,15 @@
  
 ---
 
-Perkenalkan nama saya **Raka Satria Efendi**.  
-Saya seorang **Mahasiswa Universitas Gunadarma** yang memiliki minat dalam bidang teknologi dan pengembangan diri.  
-Saya aktif dalam berbagai kegiatan akademik dan terus belajar untuk meningkatkan keterampilan di dunia digital.  
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=6A0DAD&center=true&vCenter=true&width=700&lines=Raka+Satria+Efendi;AI+%26+Machine+Learning+Enthusiast;TensorFlow.js+Web+ML+Developer;GUCC+Member+at+Gunadarma" alt="Typing SVG" />
+</p>
+
+## 👨‍💻 About Me
+
+Hi, I'm **Raka Satria Efendi** — an Informatics student at Gunadarma University and a member of GUCC.  
+I’m passionate about Artificial Intelligence, Machine Learning, and Web Development, especially building AI-powered web applications using TensorFlow.js and modern web technologies.  
+Currently, I focus on Deep Learning, Computer Vision, and integrating machine learning models into real-world web platforms.
 
 ---
 
