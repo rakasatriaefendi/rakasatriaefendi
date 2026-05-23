@@ -14,11 +14,13 @@ Saya aktif dalam berbagai kegiatan akademik dan terus belajar untuk meningkatkan
 
 ---
 
-## 📊 GitHub Stats  
+## 📊 GitHub Stats
 <div align="center">
-  <img alt="GitHub Stats Raka Satria Efendi" src="https://github-readme-stats.vercel.app/api?username=rakasatriaefendi&show_icons=true&theme=tokyonight" width="48%">
-  <img alt="Most Used Languages by Raka Satria Efendi" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rakasatriaefendi&layout=compact&theme=tokyonight" width="36%">
-</div>  
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=rakasatriaefendi&theme=tokyonight" alt="GitHub Streak">
+  <br>
+  <img src="https://img.shields.io/github/followers/rakasatriaefendi?label=Followers&style=social" alt="Followers">
+  <img src="https://img.shields.io/github/stars/rakasatriaefendi?label=Stars&style=social" alt="Stars">
+</div>
 <em>Statistik GitHub saya menampilkan jumlah kontribusi dan bahasa pemrograman yang paling sering digunakan.</em>  
 
 ---
