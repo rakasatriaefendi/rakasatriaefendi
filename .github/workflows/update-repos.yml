@@ -66,14 +66,29 @@ jobs:
 
       - name: Inject Content into README
         run: |
+          echo "=== Cek marker di README ==="
+          grep -n "START_SECTION\|END_SECTION" README.md
+      
+          echo "=== Isi aiml.md ==="
+          cat aiml.md
+      
+          echo "=== Isi web.md ==="
+          cat web.md
+      
+          echo "=== Isi others.md ==="
+          cat others.md
+      
           # Inject AI/ML
           awk '/<!--START_SECTION:aiml-->/ {print; system("cat aiml.md"); skip=1; next} /<!--END_SECTION:aiml-->/ {skip=0} !skip' README.md > temp.md && mv temp.md README.md
-
+      
           # Inject Web Dev
           awk '/<!--START_SECTION:web-->/ {print; system("cat web.md"); skip=1; next} /<!--END_SECTION:web-->/ {skip=0} !skip' README.md > temp.md && mv temp.md README.md
-
+      
           # Inject Others
           awk '/<!--START_SECTION:others-->/ {print; system("cat others.md"); skip=1; next} /<!--END_SECTION:others-->/ {skip=0} !skip' README.md > temp.md && mv temp.md README.md
+      
+          echo "=== Cek README setelah inject ==="
+          grep -n "START_SECTION\|END_SECTION\|github-readme-stats" README.md
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
