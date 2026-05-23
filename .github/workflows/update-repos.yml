@@ -1,7 +1,8 @@
 name: Update Repositories Section
+
 on:
   schedule:
-    - cron: "0 9 * * 1"  # Setiap Senin jam 16.00 WIB
+    - cron: "0 9 * * 1"  # Setiap Senin jam 09.00 UTC (16.00 WIB)
   workflow_dispatch:
 
 permissions:
@@ -30,7 +31,7 @@ jobs:
             )
           ))[:4]
           | .[]
-          | "| **[\(.name)](\(.html_url))** | \(.description // "-") | `\(.language // "-")` | \(.updated_at[0:10]) |"
+          | "<a href=\"\(.html_url)\"><img src=\"https://gh-card.dev/repos/rakasatriaefendi/\(.name).svg\" alt=\"\(.name)\"></a>"
           ' > aiml.md
 
       - name: Filter & Generate Web Dev Repos
@@ -47,7 +48,7 @@ jobs:
              (.language != null and (.language | ascii_downcase | test("html|css|javascript|typescript"))))
           ))[:4]
           | .[]
-          | "| **[\(.name)](\(.html_url))** | \(.description // "-") | `\(.language // "-")` | \(.updated_at[0:10]) |"
+          | "<a href=\"\(.html_url)\"><img src=\"https://gh-card.dev/repos/rakasatriaefendi/\(.name).svg\" alt=\"\(.name)\"></a>"
           ' > web.md
 
       - name: Filter & Generate Other Repos
@@ -66,24 +67,39 @@ jobs:
              (.language == null or (.language | ascii_downcase | test("html|css|javascript|typescript") | not)))
           ))[:4]
           | .[]
-          | "| **[\(.name)](\(.html_url))** | \(.description // "-") | `\(.language // "-")` | \(.updated_at[0:10]) |"
+          | "<a href=\"\(.html_url)\"><img src=\"https://gh-card.dev/repos/rakasatriaefendi/\(.name).svg\" alt=\"\(.name)\"></a>"
           ' > others.md
 
       - name: Inject Content into README
         run: |
+          echo "=== Cek marker di README ==="
+          grep -n "START_SECTION\|END_SECTION" README.md
+
+          echo "=== Isi aiml.md ==="
+          cat aiml.md
+
+          echo "=== Isi web.md ==="
+          cat web.md
+
+          echo "=== Isi others.md ==="
+          cat others.md
+
           # Inject AI/ML
-          awk '// {print; system("cat aiml.md"); skip=1; next} // {print; skip=0; next} !skip' README.md > temp.md && mv temp.md README.md
-          
+          awk '/<!--START_SECTION:aiml-->/ {print; system("cat aiml.md"); skip=1; next} /<!--END_SECTION:aiml-->/ {skip=0} !skip' README.md > temp.md && mv temp.md README.md
+
           # Inject Web Dev
-          awk '// {print; system("cat web.md"); skip=1; next} // {print; skip=0; next} !skip' README.md > temp.md && mv temp.md README.md
-          
+          awk '/<!--START_SECTION:web-->/ {print; system("cat web.md"); skip=1; next} /<!--END_SECTION:web-->/ {skip=0} !skip' README.md > temp.md && mv temp.md README.md
+
           # Inject Others
-          awk '// {print; system("cat others.md"); skip=1; next} // {print; skip=0; next} !skip' README.md > temp.md && mv temp.md README.md
+          awk '/<!--START_SECTION:others-->/ {print; system("cat others.md"); skip=1; next} /<!--END_SECTION:others-->/ {skip=0} !skip' README.md > temp.md && mv temp.md README.md
+
+          echo "=== Cek README setelah inject ==="
+          grep -n "START_SECTION\|END_SECTION\|gh-card" README.md
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
         with:
           add: "README.md"
-          message: "Auto update multi-category portfolios using clean text tables"
+          message: "Auto update multi-category portfolios"
           default_author: github_actions
           github_token: ${{ secrets.GITHUB_TOKEN }}
