@@ -23,14 +23,14 @@ jobs:
           cat repos.json | jq -r '
           sort_by(.updated_at) | reverse |
           map(select(
-            (.fork == false) and  # ← tambah ini, skip repo fork
+            (.fork == false) and
             (
               (.name | ascii_downcase | test("ai|ml|machine|learning|cnn|deep|neural|resnet|xception|sentimen|sentiment|cancer|skin|dermify|cinesentia")) or
               (.description != null and (.description | ascii_downcase | test("ai|ml|machine|learning|cnn|deep|neural|resnet|xception|sentimen|sentiment|cancer|skin")))
             )
           ))[:4]
           | .[]
-          | "<a href=\"\(.html_url)\"><img height=\"120\" src=\"https://github-readme-stats.vercel.app/api/pin/?username=rakasatriaefendi&repo=\(.name)&theme=tokyonight&border_radius=15\"></a>"
+          | "<a href=\"\(.html_url)\"><img height=\"120\" src=\"https://github-readme-stats.vercel.app/api/pin/?username=rakasatriaefendi&repo=\(.name | @uri)&theme=tokyonight&border_radius=15\"></a>"
           ' > aiml.md
 
       - name: Filter & Generate Web Dev Repos
@@ -82,13 +82,13 @@ jobs:
           cat others.md
       
           # Inject AI/ML
-          awk '/<!--START_SECTION:aiml-->/ {print; system("cat aiml.md"); skip=1; next} /<!--END_SECTION:aiml-->/ {skip=0} !skip' README.md > temp.md && mv temp.md README.md
+          awk '// {print; system("cat aiml.md"); skip=1; next} // {skip=0} !skip' README.md > temp.md && mv temp.md README.md
       
           # Inject Web Dev
-          awk '/<!--START_SECTION:web-->/ {print; system("cat web.md"); skip=1; next} /<!--END_SECTION:web-->/ {skip=0} !skip' README.md > temp.md && mv temp.md README.md
+          awk '// {print; system("cat web.md"); skip=1; next} // {skip=0} !skip' README.md > temp.md && mv temp.md README.md
       
           # Inject Others
-          awk '/<!--START_SECTION:others-->/ {print; system("cat others.md"); skip=1; next} /<!--END_SECTION:others-->/ {skip=0} !skip' README.md > temp.md && mv temp.md README.md
+          awk '// {print; system("cat others.md"); skip=1; next} // {skip=0} !skip' README.md > temp.md && mv temp.md README.md
       
           echo "=== Cek README setelah inject ==="
           grep -n "START_SECTION\|END_SECTION\|github-readme-stats" README.md
@@ -97,6 +97,6 @@ jobs:
         uses: EndBug/add-and-commit@v9
         with:
           add: "README.md"
-          message: "Auto update multi-category portfolios"
+          message: "Auto update multi-category portfolios with URL encoding fix"
           default_author: github_actions
           github_token: ${{ secrets.GITHUB_TOKEN }}
