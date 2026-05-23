@@ -42,16 +42,12 @@ Saya aktif dalam berbagai kegiatan akademik dan terus belajar untuk meningkatkan
 
 ---
 
-## 🚀 Skills & Tools  
+## 🚀 Skills & Tools
 <p align="center">
-  <img alt="Python Logo" src="https://skillicons.dev/icons?i=python" width="50">
-  <img alt="JavaScript Logo" src="https://skillicons.dev/icons?i=javascript" width="50">
-  <img alt="HTML Logo" src="https://skillicons.dev/icons?i=html" width="50">
-  <img alt="CSS Logo" src="https://skillicons.dev/icons?i=css" width="50">
-  <img alt="Git Logo" src="https://skillicons.dev/icons?i=git" width="50">
-</p>  
-
-<em>Beberapa bahasa pemrograman dan alat yang saya gunakan dalam pengembangan proyek.</em>  
+<!--START_SECTION:skills-->
+<!--END_SECTION:skills-->
+</p>
+<em>Beberapa bahasa pemrograman dan alat yang saya gunakan dalam pengembangan proyek.</em>
 
 ---
 
@@ -64,15 +60,9 @@ Saya aktif dalam berbagai kegiatan akademik dan terus belajar untuk meningkatkan
 ---
 
 <h2 align="center">📂 My GitHub Repositories 📂</h2>
-<br>
-
-<div width="100%" align="center">
-  <a href="https://github.com/rakasatriaefendi/Proyek-Analisis-Data-Air-Quality-in-Beijing">
-    <img align="left" height="130" src="https://github-readme-stats.vercel.app/api/pin/?username=rakasatriaefendi&repo=Proyek-Analisis-Data-Air-Quality-in-Beijing&theme=tokyonight&border_color=blueviolet&border_radius=20" style="margin-right: 40px;">
-  </a>
-  <a href="https://github.com/rakasatriaefendi/Analisis-Data-Spotify">
-    <img align="right" height="130" src="https://github-readme-stats.vercel.app/api/pin/?username=rakasatriaefendi&repo=Analisis-Data-Spotify&theme=tokyonight&border_color=blueviolet&border_radius=20">
-  </a>
+<div align="center">
+<!--START_SECTION:pinned-->
+<!--END_SECTION:pinned-->
 </div>
 
 <br/><br/><br/><br/><br/><br/>
