@@ -45,6 +45,12 @@ Saya aktif dalam berbagai kegiatan akademik dan terus belajar untuk meningkatkan
 ## 🚀 Skills & Tools
 <p align="center">
 <!--START_SECTION:skills-->
+  <img alt="Jupyter Notebook Logo" src="https://skillicons.dev/icons?i=python" width="50">
+  <img alt="Python Logo" src="https://skillicons.dev/icons?i=python" width="50">
+  <img alt="JavaScript Logo" src="https://skillicons.dev/icons?i=javascript" width="50">
+  <img alt="TypeScript Logo" src="https://skillicons.dev/icons?i=typescript" width="50">
+  <img alt="Java Logo" src="https://skillicons.dev/icons?i=java" width="50">
+  <img alt="HTML Logo" src="https://skillicons.dev/icons?i=html" width="50">
 <!--END_SECTION:skills-->
 </p>
 <em>Beberapa bahasa pemrograman dan alat yang saya gunakan dalam pengembangan proyek.</em>
@@ -62,6 +68,11 @@ Saya aktif dalam berbagai kegiatan akademik dan terus belajar untuk meningkatkan
 <h2 align="center">📂 My GitHub Repositories 📂</h2>
 <div align="center">
 <!--START_SECTION:pinned-->
+<a href="https://github.com/rakasatriaefendi/cinesentia-model"><img src="https://gh-card.dev/repos/rakasatriaefendi/cinesentia-model.svg" alt="cinesentia-model"></a>
+<a href="https://github.com/rakasatriaefendi/DERMIFY-Skripsi"><img src="https://gh-card.dev/repos/rakasatriaefendi/DERMIFY-Skripsi.svg" alt="DERMIFY-Skripsi"></a>
+<a href="https://github.com/rakasatriaefendi/RAKA21"><img src="https://gh-card.dev/repos/rakasatriaefendi/RAKA21.svg" alt="RAKA21"></a>
+<a href="https://github.com/rakasatriaefendi/shopinid-ecommerce"><img src="https://gh-card.dev/repos/rakasatriaefendi/shopinid-ecommerce.svg" alt="shopinid-ecommerce"></a>
+<a href="https://github.com/rakasatriaefendi/Belajar-Pengembangan-Web-Intermediate-Submission-Proyek-Kedua"><img src="https://gh-card.dev/repos/rakasatriaefendi/Belajar-Pengembangan-Web-Intermediate-Submission-Proyek-Kedua.svg" alt="Belajar-Pengembangan-Web-Intermediate-Submission-Proyek-Kedua"></a>
 <!--END_SECTION:pinned-->
 </div>
 
