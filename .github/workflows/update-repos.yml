@@ -1,7 +1,7 @@
 name: Update Repositories Section
 on:
   schedule:
-    - cron: "0 9 * * 1"  # Setiap Senin jam 09.00 UTC (16.00 WIB)
+    - cron: "0 9 * * 1"  # Setiap Senin jam 16.00 WIB
   workflow_dispatch:
 
 permissions:
@@ -30,7 +30,7 @@ jobs:
             )
           ))[:4]
           | .[]
-          | "<a href=\"\(.html_url)\"><img height=\"120\" src=\"https://github-readme-stats.vercel.app/api/pin/?username=rakasatriaefendi&repo=\(.name | @uri)&theme=tokyonight&border_radius=15\"></a>"
+          | "| **[\(.name)](\(.html_url))** | \(.description // "-") | `\(.language // "-")` | \(.updated_at | formatDate) |"
           ' > aiml.md
 
       - name: Filter & Generate Web Dev Repos
@@ -38,6 +38,7 @@ jobs:
           cat repos.json | jq -r '
           sort_by(.updated_at) | reverse |
           map(select(
+            (.fork == false) and
             ((.name | ascii_downcase | test("ai|ml|machine|learning|cnn|deep|neural|resnet|xception") | not) and
              (.description == null or (.description | ascii_downcase | test("ai|ml|machine|learning|cnn|deep|neural|resnet|xception") | not)))
             and
@@ -46,7 +47,7 @@ jobs:
              (.language != null and (.language | ascii_downcase | test("html|css|javascript|typescript"))))
           ))[:4]
           | .[]
-          | "<a href=\"\(.html_url)\"><img height=\"120\" src=\"https://github-readme-stats.vercel.app/api/pin/?username=rakasatriaefendi&repo=\(.name | @uri)&theme=tokyonight&border_radius=15\"></a>"
+          | "| **[\(.name)](\(.html_url))** | \(.description // "-") | `\(.language // "-")` | \(.updated_at | formatDate) |"
           ' > web.md
 
       - name: Filter & Generate Other Repos
@@ -54,6 +55,7 @@ jobs:
           cat repos.json | jq -r '
           sort_by(.updated_at) | reverse |
           map(select(
+            (.fork == false) and
             (.name | ascii_downcase == "rakasatriaefendi" | not)
             and
             ((.name | ascii_downcase | test("ai|ml|machine|learning|cnn|deep|neural|resnet|xception") | not) and
@@ -64,39 +66,24 @@ jobs:
              (.language == null or (.language | ascii_downcase | test("html|css|javascript|typescript") | not)))
           ))[:4]
           | .[]
-          | "<a href=\"\(.html_url)\"><img height=\"120\" src=\"https://github-readme-stats.vercel.app/api/pin/?username=rakasatriaefendi&repo=\(.name | @uri)&theme=tokyonight&border_radius=15\"></a>"
+          | "| **[\(.name)](\(.html_url))** | \(.description // "-") | `\(.language // "-")` | \(.updated_at | formatDate) |"
           ' > others.md
 
       - name: Inject Content into README
         run: |
-          echo "=== Cek marker di README ==="
-          grep -n "START_SECTION\|END_SECTION" README.md
-      
-          echo "=== Isi aiml.md ==="
-          cat aiml.md
-      
-          echo "=== Isi web.md ==="
-          cat web.md
-      
-          echo "=== Isi others.md ==="
-          cat others.md
-      
           # Inject AI/ML
-          awk '// {print; system("cat aiml.md"); skip=1; next} // {skip=0} !skip' README.md > temp.md && mv temp.md README.md
-      
+          awk '// {print; system("cat aiml.md"); skip=1; next} // {print; skip=0; next} !skip' README.md > temp.md && mv temp.md README.md
+          
           # Inject Web Dev
-          awk '// {print; system("cat web.md"); skip=1; next} // {skip=0} !skip' README.md > temp.md && mv temp.md README.md
-      
+          awk '// {print; system("cat web.md"); skip=1; next} // {print; skip=0; next} !skip' README.md > temp.md && mv temp.md README.md
+          
           # Inject Others
-          awk '// {print; system("cat others.md"); skip=1; next} // {skip=0} !skip' README.md > temp.md && mv temp.md README.md
-      
-          echo "=== Cek README setelah inject ==="
-          grep -n "START_SECTION\|END_SECTION\|github-readme-stats" README.md
+          awk '// {print; system("cat others.md"); skip=1; next} // {print; skip=0; next} !skip' README.md > temp.md && mv temp.md README.md
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
         with:
           add: "README.md"
-          message: "Auto update multi-category portfolios with URL encoding fix"
+          message: "Auto update multi-category portfolios using clean text tables"
           default_author: github_actions
           github_token: ${{ secrets.GITHUB_TOKEN }}
