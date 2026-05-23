@@ -19,6 +19,54 @@ jobs:
         run: |
           curl -s "https://api.github.com/users/rakasatriaefendi/repos?sort=updated&per_page=100" > repos.json
 
+      - name: Filter & Generate Pinned Repos
+        run: |
+          cat repos.json | jq -r '
+          sort_by(.updated_at) | reverse |
+          map(select(.fork == false and (.name | ascii_downcase != "rakasatriaefendi")))[:5]
+          | .[]
+          | "<a href=\"\(.html_url)\"><img src=\"https://gh-card.dev/repos/rakasatriaefendi/\(.name).svg\" alt=\"\(.name)\"></a>"
+          ' > pinned.md
+
+      - name: Filter & Generate Skills
+        run: |
+          cat repos.json | jq -r '
+          map(select(.fork == false and .language != null))
+          | map(.language)
+          | group_by(.)
+          | map({lang: .[0], count: length})
+          | sort_by(.count) | reverse
+          | .[0:8]
+          | .[].lang
+          ' | while read lang; do
+            case "$lang" in
+              "Python") icon="python" ;;
+              "JavaScript") icon="javascript" ;;
+              "TypeScript") icon="typescript" ;;
+              "HTML") icon="html" ;;
+              "CSS") icon="css" ;;
+              "Java") icon="java" ;;
+              "C") icon="c" ;;
+              "C++") icon="cpp" ;;
+              "C#") icon="cs" ;;
+              "PHP") icon="php" ;;
+              "Ruby") icon="ruby" ;;
+              "Go") icon="go" ;;
+              "Rust") icon="rust" ;;
+              "Swift") icon="swift" ;;
+              "Kotlin") icon="kotlin" ;;
+              "Dart") icon="dart" ;;
+              "Jupyter Notebook") icon="python" ;;
+              *) icon="" ;;
+            esac
+            if [ -n "$icon" ]; then
+              echo "  <img alt=\"$lang Logo\" src=\"https://skillicons.dev/icons?i=$icon\" width=\"50\">"
+            fi
+          done > skills.md
+
+          echo "=== Isi skills.md ==="
+          cat skills.md
+
       - name: Filter & Generate AI/ML Repos
         run: |
           cat repos.json | jq -r '
@@ -84,6 +132,12 @@ jobs:
           echo "=== Isi others.md ==="
           cat others.md
 
+          # Inject Pinned
+          awk '/<!--START_SECTION:pinned-->/ {print; system("cat pinned.md"); skip=1; next} /<!--END_SECTION:pinned-->/ {skip=0} !skip' README.md > temp.md && mv temp.md README.md
+
+          # Inject Skills
+          awk '/<!--START_SECTION:skills-->/ {print; system("cat skills.md"); skip=1; next} /<!--END_SECTION:skills-->/ {skip=0} !skip' README.md > temp.md && mv temp.md README.md
+
           # Inject AI/ML
           awk '/<!--START_SECTION:aiml-->/ {print; system("cat aiml.md"); skip=1; next} /<!--END_SECTION:aiml-->/ {skip=0} !skip' README.md > temp.md && mv temp.md README.md
 
@@ -94,7 +148,7 @@ jobs:
           awk '/<!--START_SECTION:others-->/ {print; system("cat others.md"); skip=1; next} /<!--END_SECTION:others-->/ {skip=0} !skip' README.md > temp.md && mv temp.md README.md
 
           echo "=== Cek README setelah inject ==="
-          grep -n "START_SECTION\|END_SECTION\|gh-card" README.md
+          grep -n "START_SECTION\|END_SECTION\|gh-card\|skillicons" README.md
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
