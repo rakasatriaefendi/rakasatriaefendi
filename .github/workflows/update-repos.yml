@@ -23,7 +23,7 @@ jobs:
         run: |
           TOTAL=$(cat repos.json | jq '[.[] | select(.fork == false)] | length')
           STARS=$(cat repos.json | jq '[.[] | select(.fork == false) | .stargazers_count] | add // 0')
-          echo "![Public Repos](https://img.shields.io/badge/Public%20Repos-${TOTAL}-blueviolet?style=flat-square) ![Total Stars](https://img.shields.io/badge/Total%20Stars-${STARS}-yellow?style=flat-square)" > statsbadge.md
+          echo "<img src=\"https://img.shields.io/badge/Public%20Repos-${TOTAL}-blueviolet?style=flat-square\" alt=\"Public Repos\"> <img src=\"https://img.shields.io/badge/Total%20Stars-${STARS}-yellow?style=flat-square\" alt=\"Total Stars\">" > statsbadge.md
 
       - name: Filter & Generate Pinned Repos
         run: |
