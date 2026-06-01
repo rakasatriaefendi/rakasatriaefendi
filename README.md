@@ -25,7 +25,7 @@ Currently, I focus on Deep Learning, Computer Vision, and integrating machine le
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=rakasatriaefendi&theme=tokyo-night" alt="Activity Graph">
   <br><br>
   <!--START_SECTION:statsbadge-->
-<img src="https://img.shields.io/badge/Public%20Repos-37-blueviolet?style=flat-square" alt="Public Repos"> <img src="https://img.shields.io/badge/Total%20Stars-1-yellow?style=flat-square" alt="Total Stars">
+<img src="https://img.shields.io/badge/Public%20Repos-38-blueviolet?style=flat-square" alt="Public Repos"> <img src="https://img.shields.io/badge/Total%20Stars-1-yellow?style=flat-square" alt="Total Stars">
   <!--END_SECTION:statsbadge-->
   <br>
   <img src="https://img.shields.io/github/followers/rakasatriaefendi?label=Followers&style=social" alt="Followers">
@@ -90,11 +90,11 @@ Currently, I focus on Deep Learning, Computer Vision, and integrating machine le
 <h2 align="center">📂 Latest Repositories</h2>
 <div align="center">
 <!--START_SECTION:pinned-->
+<a href="https://github.com/rakasatriaefendi/NemuParfang"><img src="https://gh-card.dev/repos/rakasatriaefendi/NemuParfang.svg" alt="NemuParfang"></a>
 <a href="https://github.com/rakasatriaefendi/Libretix"><img src="https://gh-card.dev/repos/rakasatriaefendi/Libretix.svg" alt="Libretix"></a>
 <a href="https://github.com/rakasatriaefendi/cinesentia-model"><img src="https://gh-card.dev/repos/rakasatriaefendi/cinesentia-model.svg" alt="cinesentia-model"></a>
 <a href="https://github.com/rakasatriaefendi/DERMIFY-Skripsi"><img src="https://gh-card.dev/repos/rakasatriaefendi/DERMIFY-Skripsi.svg" alt="DERMIFY-Skripsi"></a>
 <a href="https://github.com/rakasatriaefendi/RAKA21"><img src="https://gh-card.dev/repos/rakasatriaefendi/RAKA21.svg" alt="RAKA21"></a>
-<a href="https://github.com/rakasatriaefendi/shopinid-ecommerce"><img src="https://gh-card.dev/repos/rakasatriaefendi/shopinid-ecommerce.svg" alt="shopinid-ecommerce"></a>
 <!--END_SECTION:pinned-->
 </div>
 
@@ -104,10 +104,10 @@ Currently, I focus on Deep Learning, Computer Vision, and integrating machine le
 
 <div align="center">
 <!--START_SECTION:aiml-->
+<a href="https://github.com/rakasatriaefendi/NemuParfang"><img src="https://gh-card.dev/repos/rakasatriaefendi/NemuParfang.svg" alt="NemuParfang"></a>
 <a href="https://github.com/rakasatriaefendi/Libretix"><img src="https://gh-card.dev/repos/rakasatriaefendi/Libretix.svg" alt="Libretix"></a>
 <a href="https://github.com/rakasatriaefendi/cinesentia-model"><img src="https://gh-card.dev/repos/rakasatriaefendi/cinesentia-model.svg" alt="cinesentia-model"></a>
 <a href="https://github.com/rakasatriaefendi/DERMIFY-Skripsi"><img src="https://gh-card.dev/repos/rakasatriaefendi/DERMIFY-Skripsi.svg" alt="DERMIFY-Skripsi"></a>
-<a href="https://github.com/rakasatriaefendi/Belajar-Machine-Learning-Pemula"><img src="https://gh-card.dev/repos/rakasatriaefendi/Belajar-Machine-Learning-Pemula.svg" alt="Belajar-Machine-Learning-Pemula"></a>
 <!--END_SECTION:aiml-->
 </div>
 
@@ -141,7 +141,7 @@ Currently, I focus on Deep Learning, Computer Vision, and integrating machine le
 
 <p align="center">
   <!--START_SECTION:updated-->
-<img src="https://img.shields.io/badge/Last%20Updated-25_May_2026-gray?style=flat-square" alt="Last Updated">
+<img src="https://img.shields.io/badge/Last%20Updated-01_Jun_2026-gray?style=flat-square" alt="Last Updated">
   <!--END_SECTION:updated-->
 </p>
 
