@@ -141,7 +141,7 @@ Currently, I focus on Deep Learning, Computer Vision, and integrating machine le
 
 <p align="center">
   <!--START_SECTION:updated-->
-<img src="https://img.shields.io/badge/Last%20Updated-01_Jun_2026-gray?style=flat-square" alt="Last Updated">
+<img src="https://img.shields.io/badge/Last%20Updated-08_Jun_2026-gray?style=flat-square" alt="Last Updated">
   <!--END_SECTION:updated-->
 </p>
 
