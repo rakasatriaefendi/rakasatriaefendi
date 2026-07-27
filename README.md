@@ -25,7 +25,7 @@ Currently, I focus on Deep Learning, Computer Vision, and integrating machine le
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=rakasatriaefendi&theme=tokyo-night" alt="Activity Graph">
   <br><br>
   <!--START_SECTION:statsbadge-->
-<img src="https://img.shields.io/badge/Public%20Repos-39-blueviolet?style=flat-square" alt="Public Repos"> <img src="https://img.shields.io/badge/Total%20Stars-1-yellow?style=flat-square" alt="Total Stars">
+<img src="https://img.shields.io/badge/Public%20Repos-40-blueviolet?style=flat-square" alt="Public Repos"> <img src="https://img.shields.io/badge/Total%20Stars-1-yellow?style=flat-square" alt="Total Stars">
   <!--END_SECTION:statsbadge-->
   <br>
   <img src="https://img.shields.io/github/followers/rakasatriaefendi?label=Followers&style=social" alt="Followers">
@@ -72,8 +72,8 @@ Currently, I focus on Deep Learning, Computer Vision, and integrating machine le
   <img alt="Python Logo" src="https://skillicons.dev/icons?i=python" width="50">
   <img alt="JavaScript Logo" src="https://skillicons.dev/icons?i=javascript" width="50">
   <img alt="TypeScript Logo" src="https://skillicons.dev/icons?i=typescript" width="50">
-  <img alt="Java Logo" src="https://skillicons.dev/icons?i=java" width="50">
   <img alt="HTML Logo" src="https://skillicons.dev/icons?i=html" width="50">
+  <img alt="Java Logo" src="https://skillicons.dev/icons?i=java" width="50">
 <!--END_SECTION:skills-->
 </p>
 
@@ -90,11 +90,11 @@ Currently, I focus on Deep Learning, Computer Vision, and integrating machine le
 <h2 align="center">📂 Latest Repositories</h2>
 <div align="center">
 <!--START_SECTION:pinned-->
+<a href="https://github.com/rakasatriaefendi/portofolio"><img src="https://gh-card.dev/repos/rakasatriaefendi/portofolio.svg" alt="portofolio"></a>
 <a href="https://github.com/rakasatriaefendi/DERMIFY-Skripsi"><img src="https://gh-card.dev/repos/rakasatriaefendi/DERMIFY-Skripsi.svg" alt="DERMIFY-Skripsi"></a>
 <a href="https://github.com/rakasatriaefendi/tesparfum"><img src="https://gh-card.dev/repos/rakasatriaefendi/tesparfum.svg" alt="tesparfum"></a>
 <a href="https://github.com/rakasatriaefendi/NemuParfang"><img src="https://gh-card.dev/repos/rakasatriaefendi/NemuParfang.svg" alt="NemuParfang"></a>
 <a href="https://github.com/rakasatriaefendi/Libretix"><img src="https://gh-card.dev/repos/rakasatriaefendi/Libretix.svg" alt="Libretix"></a>
-<a href="https://github.com/rakasatriaefendi/cinesentia-model"><img src="https://gh-card.dev/repos/rakasatriaefendi/cinesentia-model.svg" alt="cinesentia-model"></a>
 <!--END_SECTION:pinned-->
 </div>
 
@@ -117,10 +117,10 @@ Currently, I focus on Deep Learning, Computer Vision, and integrating machine le
 
 <div align="center">
 <!--START_SECTION:web-->
+<a href="https://github.com/rakasatriaefendi/portofolio"><img src="https://gh-card.dev/repos/rakasatriaefendi/portofolio.svg" alt="portofolio"></a>
 <a href="https://github.com/rakasatriaefendi/RAKA21"><img src="https://gh-card.dev/repos/rakasatriaefendi/RAKA21.svg" alt="RAKA21"></a>
 <a href="https://github.com/rakasatriaefendi/shopinid-ecommerce"><img src="https://gh-card.dev/repos/rakasatriaefendi/shopinid-ecommerce.svg" alt="shopinid-ecommerce"></a>
 <a href="https://github.com/rakasatriaefendi/Belajar-Pengembangan-Web-Intermediate-Submission-Proyek-Kedua"><img src="https://gh-card.dev/repos/rakasatriaefendi/Belajar-Pengembangan-Web-Intermediate-Submission-Proyek-Kedua.svg" alt="Belajar-Pengembangan-Web-Intermediate-Submission-Proyek-Kedua"></a>
-<a href="https://github.com/rakasatriaefendi/storyapp-web-interrmediate"><img src="https://gh-card.dev/repos/rakasatriaefendi/storyapp-web-interrmediate.svg" alt="storyapp-web-interrmediate"></a>
 <!--END_SECTION:web-->
 </div>
 
@@ -141,7 +141,7 @@ Currently, I focus on Deep Learning, Computer Vision, and integrating machine le
 
 <p align="center">
   <!--START_SECTION:updated-->
-<img src="https://img.shields.io/badge/Last%20Updated-20_Jul_2026-gray?style=flat-square" alt="Last Updated">
+<img src="https://img.shields.io/badge/Last%20Updated-27_Jul_2026-gray?style=flat-square" alt="Last Updated">
   <!--END_SECTION:updated-->
 </p>
 
