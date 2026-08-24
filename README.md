@@ -90,10 +90,10 @@ Currently, I focus on Deep Learning, Computer Vision, and integrating machine le
 <h2 align="center">📂 Latest Repositories</h2>
 <div align="center">
 <!--START_SECTION:pinned-->
+<a href="https://github.com/rakasatriaefendi/portofolio"><img src="https://gh-card.dev/repos/rakasatriaefendi/portofolio.svg" alt="portofolio"></a>
 <a href="https://github.com/rakasatriaefendi/stroke-segmentation-bilbil"><img src="https://gh-card.dev/repos/rakasatriaefendi/stroke-segmentation-bilbil.svg" alt="stroke-segmentation-bilbil"></a>
 <a href="https://github.com/rakasatriaefendi/DERMIFY-Skripsi"><img src="https://gh-card.dev/repos/rakasatriaefendi/DERMIFY-Skripsi.svg" alt="DERMIFY-Skripsi"></a>
 <a href="https://github.com/rakasatriaefendi/Si-Cuan-Apps"><img src="https://gh-card.dev/repos/rakasatriaefendi/Si-Cuan-Apps.svg" alt="Si-Cuan-Apps"></a>
-<a href="https://github.com/rakasatriaefendi/portofolio"><img src="https://gh-card.dev/repos/rakasatriaefendi/portofolio.svg" alt="portofolio"></a>
 <a href="https://github.com/rakasatriaefendi/tesparfum"><img src="https://gh-card.dev/repos/rakasatriaefendi/tesparfum.svg" alt="tesparfum"></a>
 <!--END_SECTION:pinned-->
 </div>
@@ -141,7 +141,7 @@ Currently, I focus on Deep Learning, Computer Vision, and integrating machine le
 
 <p align="center">
   <!--START_SECTION:updated-->
-<img src="https://img.shields.io/badge/Last%20Updated-17_Aug_2026-gray?style=flat-square" alt="Last Updated">
+<img src="https://img.shields.io/badge/Last%20Updated-24_Aug_2026-gray?style=flat-square" alt="Last Updated">
   <!--END_SECTION:updated-->
 </p>
 
