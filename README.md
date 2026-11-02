@@ -25,7 +25,7 @@ Currently, I focus on Deep Learning, Computer Vision, and integrating machine le
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=rakasatriaefendi&theme=tokyo-night" alt="Activity Graph">
   <br><br>
   <!--START_SECTION:statsbadge-->
-<img src="https://img.shields.io/badge/Public%20Repos-43-blueviolet?style=flat-square" alt="Public Repos"> <img src="https://img.shields.io/badge/Total%20Stars-1-yellow?style=flat-square" alt="Total Stars">
+<img src="https://img.shields.io/badge/Public%20Repos-45-blueviolet?style=flat-square" alt="Public Repos"> <img src="https://img.shields.io/badge/Total%20Stars-1-yellow?style=flat-square" alt="Total Stars">
   <!--END_SECTION:statsbadge-->
   <br>
   <img src="https://img.shields.io/github/followers/rakasatriaefendi?label=Followers&style=social" alt="Followers">
@@ -90,11 +90,11 @@ Currently, I focus on Deep Learning, Computer Vision, and integrating machine le
 <h2 align="center">📂 Latest Repositories</h2>
 <div align="center">
 <!--START_SECTION:pinned-->
+<a href="https://github.com/rakasatriaefendi/JAGRATA"><img src="https://gh-card.dev/repos/rakasatriaefendi/JAGRATA.svg" alt="JAGRATA"></a>
+<a href="https://github.com/rakasatriaefendi/JHC-NetOps"><img src="https://gh-card.dev/repos/rakasatriaefendi/JHC-NetOps.svg" alt="JHC-NetOps"></a>
 <a href="https://github.com/rakasatriaefendi/jore"><img src="https://gh-card.dev/repos/rakasatriaefendi/jore.svg" alt="jore"></a>
 <a href="https://github.com/rakasatriaefendi/portofolio"><img src="https://gh-card.dev/repos/rakasatriaefendi/portofolio.svg" alt="portofolio"></a>
 <a href="https://github.com/rakasatriaefendi/stroke-segmentation-bilbil"><img src="https://gh-card.dev/repos/rakasatriaefendi/stroke-segmentation-bilbil.svg" alt="stroke-segmentation-bilbil"></a>
-<a href="https://github.com/rakasatriaefendi/DERMIFY-Skripsi"><img src="https://gh-card.dev/repos/rakasatriaefendi/DERMIFY-Skripsi.svg" alt="DERMIFY-Skripsi"></a>
-<a href="https://github.com/rakasatriaefendi/Si-Cuan-Apps"><img src="https://gh-card.dev/repos/rakasatriaefendi/Si-Cuan-Apps.svg" alt="Si-Cuan-Apps"></a>
 <!--END_SECTION:pinned-->
 </div>
 
@@ -117,10 +117,10 @@ Currently, I focus on Deep Learning, Computer Vision, and integrating machine le
 
 <div align="center">
 <!--START_SECTION:web-->
+<a href="https://github.com/rakasatriaefendi/JAGRATA"><img src="https://gh-card.dev/repos/rakasatriaefendi/JAGRATA.svg" alt="JAGRATA"></a>
+<a href="https://github.com/rakasatriaefendi/JHC-NetOps"><img src="https://gh-card.dev/repos/rakasatriaefendi/JHC-NetOps.svg" alt="JHC-NetOps"></a>
 <a href="https://github.com/rakasatriaefendi/portofolio"><img src="https://gh-card.dev/repos/rakasatriaefendi/portofolio.svg" alt="portofolio"></a>
 <a href="https://github.com/rakasatriaefendi/RAKA21"><img src="https://gh-card.dev/repos/rakasatriaefendi/RAKA21.svg" alt="RAKA21"></a>
-<a href="https://github.com/rakasatriaefendi/shopinid-ecommerce"><img src="https://gh-card.dev/repos/rakasatriaefendi/shopinid-ecommerce.svg" alt="shopinid-ecommerce"></a>
-<a href="https://github.com/rakasatriaefendi/Belajar-Pengembangan-Web-Intermediate-Submission-Proyek-Kedua"><img src="https://gh-card.dev/repos/rakasatriaefendi/Belajar-Pengembangan-Web-Intermediate-Submission-Proyek-Kedua.svg" alt="Belajar-Pengembangan-Web-Intermediate-Submission-Proyek-Kedua"></a>
 <!--END_SECTION:web-->
 </div>
 
@@ -141,7 +141,7 @@ Currently, I focus on Deep Learning, Computer Vision, and integrating machine le
 
 <p align="center">
   <!--START_SECTION:updated-->
-<img src="https://img.shields.io/badge/Last%20Updated-26_Oct_2026-gray?style=flat-square" alt="Last Updated">
+<img src="https://img.shields.io/badge/Last%20Updated-02_Nov_2026-gray?style=flat-square" alt="Last Updated">
   <!--END_SECTION:updated-->
 </p>
 
